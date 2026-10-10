@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="expo.modules.gate" >
+
+    <uses-sdk android:minSdkVersion="27" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application>
+        <service
+            android:name="expo.modules.gate.GateService"
+            android:exported="false"
+            android:foregroundServiceType="specialUse" >
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="Shows a Bible verse when the user turns on or unlocks their phone, a habit they enabled themselves." />
+        </service>
+
+        <receiver
+            android:name="expo.modules.gate.BootReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- The verse screen. Own task, shown on top of the lock screen, never in Recents. -->
+        <activity
+            android:name="expo.modules.gate.GateActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:showWhenLocked="true"
+            android:taskAffinity="${applicationId}.gate"
+            android:theme="@style/Theme.Gate" />
+    </application>
+
+</manifest>

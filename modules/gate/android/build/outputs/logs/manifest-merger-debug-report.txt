@@ -1,0 +1,84 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:1:1-36:12
+INJECTED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:1:1-36:12
+	package
+		INJECTED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:2:3-76
+	android:name
+		ADDED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:2:20-73
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:3:3-75
+	android:name
+		ADDED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:3:20-72
+uses-permission#android.permission.FOREGROUND_SERVICE_SPECIAL_USE
+ADDED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:4:3-87
+	android:name
+		ADDED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:4:20-84
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:5:3-79
+	android:name
+		ADDED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:5:20-76
+application
+ADDED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:7:3-35:17
+service#expo.modules.gate.GateService
+ADDED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:8:5-15:15
+	android:exported
+		ADDED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:10:7-31
+	android:foregroundServiceType
+		ADDED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:11:7-49
+	android:name
+		ADDED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:9:7-34
+property#android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE
+ADDED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:12:7-14:127
+	android:value
+		ADDED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:14:9-124
+	android:name
+		ADDED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:13:9-68
+receiver#expo.modules.gate.BootReceiver
+ADDED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:17:5-22:16
+	android:exported
+		ADDED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:17:44-67
+	android:name
+		ADDED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:17:15-43
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.MY_PACKAGE_REPLACED
+ADDED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:18:7-21:23
+action#android.intent.action.BOOT_COMPLETED
+ADDED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:19:9-71
+	android:name
+		ADDED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:19:17-68
+action#android.intent.action.MY_PACKAGE_REPLACED
+ADDED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:20:9-76
+	android:name
+		ADDED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:20:17-73
+activity#expo.modules.gate.GateActivity
+ADDED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:25:5-34:43
+	android:screenOrientation
+		ADDED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:32:7-43
+	android:excludeFromRecents
+		ADDED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:29:7-40
+	android:showWhenLocked
+		ADDED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:28:7-36
+	android:launchMode
+		ADDED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:30:7-38
+	android:exported
+		ADDED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:27:7-31
+	android:configChanges
+		ADDED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:33:7-116
+	android:theme
+		ADDED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:34:7-40
+	android:taskAffinity
+		ADDED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:31:7-51
+	android:name
+		ADDED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:26:7-35
+uses-sdk
+INJECTED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml
+INJECTED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml

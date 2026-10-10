@@ -1,0 +1,78 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="expo.modules.gate" >
+4
+5    <uses-sdk android:minSdkVersion="27" />
+6
+7    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+7-->/Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:2:3-76
+7-->/Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:2:20-73
+8    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+8-->/Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:3:3-75
+8-->/Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:3:20-72
+9    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+9-->/Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:4:3-87
+9-->/Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:4:20-84
+10    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+10-->/Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:5:3-79
+10-->/Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:5:20-76
+11
+12    <application>
+12-->/Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:7:3-35:17
+13        <service
+13-->/Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:8:5-15:15
+14            android:name="expo.modules.gate.GateService"
+14-->/Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:9:7-34
+15            android:exported="false"
+15-->/Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:10:7-31
+16            android:foregroundServiceType="specialUse" >
+16-->/Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:11:7-49
+17            <property
+17-->/Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:12:7-14:127
+18                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+18-->/Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:13:9-68
+19                android:value="Shows a Bible verse when the user turns on or unlocks their phone, a habit they enabled themselves." />
+19-->/Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:14:9-124
+20        </service>
+21
+22        <receiver
+22-->/Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:17:5-22:16
+23            android:name="expo.modules.gate.BootReceiver"
+23-->/Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:17:15-43
+24            android:exported="true" >
+24-->/Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:17:44-67
+25            <intent-filter>
+25-->/Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:18:7-21:23
+26                <action android:name="android.intent.action.BOOT_COMPLETED" />
+26-->/Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:19:9-71
+26-->/Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:19:17-68
+27                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+27-->/Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:20:9-76
+27-->/Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:20:17-73
+28            </intent-filter>
+29        </receiver>
+30
+31        <!-- The verse screen. Own task, shown on top of the lock screen, never in Recents. -->
+32        <activity
+32-->/Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:25:5-34:43
+33            android:name="expo.modules.gate.GateActivity"
+33-->/Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:26:7-35
+34            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+34-->/Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:33:7-116
+35            android:excludeFromRecents="true"
+35-->/Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:29:7-40
+36            android:exported="false"
+36-->/Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:27:7-31
+37            android:launchMode="singleTask"
+37-->/Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:30:7-38
+38            android:screenOrientation="portrait"
+38-->/Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:32:7-43
+39            android:showWhenLocked="true"
+39-->/Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:28:7-36
+40            android:taskAffinity="${applicationId}.gate"
+40-->/Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:31:7-51
+41            android:theme="@style/Theme.Gate" />
+41-->/Users/hitesh_55/Desktop/Hitesh/bible-unlock/modules/gate/android/src/main/AndroidManifest.xml:34:7-40
+42    </application>
+43
+44</manifest>

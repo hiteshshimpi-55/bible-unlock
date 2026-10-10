@@ -1,0 +1,1 @@
+http://schemas.android.com/apk/res-auto;;${\:gate*release*MAIN*sourceProvider*0*resDir*0}/values/gate.xml,+color:gate_bg,0,V20001000e,2700010033,;"#0E0D0B";+style:Theme.Gate,0,V200020036,a0006013f,;DTheme.AppCompat.NoActionBar,android\:windowBackground:@color/gate_bg,android\:statusBarColor:@color/gate_bg,android\:navigationBarColor:@color/gate_bg,;

@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "bible-unlock",
+    "name": "Bible Unlock",
     "slug": "bible-unlock",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -10,6 +10,7 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.bibleunlock.app",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",
@@ -20,6 +21,17 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-speech-recognition",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "minSdkVersion": 27
+          }
+        }
+      ]
+    ]
   }
 }

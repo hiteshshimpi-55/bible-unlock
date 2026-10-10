@@ -1,8 +1,9 @@
 import { registerRootComponent } from 'expo';
+import { AppRegistry } from 'react-native';
 
 import App from './App';
+import GateScreen from './src/GateScreen';
 
-// registerRootComponent calls AppRegistry.registerComponent('main', () => App);
-// It also ensures that whether you load the app in Expo Go or in a native build,
-// the environment is set up appropriately
+// "main" = setup/settings (MainActivity); "gate" = the verse lock (GateActivity, over the lock screen).
 registerRootComponent(App);
+AppRegistry.registerComponent('gate', () => GateScreen);

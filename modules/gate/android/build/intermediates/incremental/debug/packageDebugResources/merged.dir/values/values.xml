@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gate_bg">#0E0D0B</color>
+    <style name="Theme.Gate" parent="Theme.AppCompat.NoActionBar">
+    <item name="android:windowBackground">@color/gate_bg</item>
+    <item name="android:statusBarColor">@color/gate_bg</item>
+    <item name="android:navigationBarColor">@color/gate_bg</item>
+  </style>
+</resources>

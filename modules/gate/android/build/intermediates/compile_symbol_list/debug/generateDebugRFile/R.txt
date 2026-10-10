@@ -1,0 +1,2 @@
+int color gate_bg 0x0
+int style Theme_Gate 0x0

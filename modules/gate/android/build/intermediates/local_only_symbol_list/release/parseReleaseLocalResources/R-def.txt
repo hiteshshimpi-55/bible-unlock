@@ -1,0 +1,4 @@
+R_DEF: Internal format may change without notice
+local
+color gate_bg
+style Theme.Gate
